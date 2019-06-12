@@ -11,5 +11,5 @@ RUN apk add --no-cache openjdk8 graphviz ttf-droid ttf-droid-nonlatin curl \
     && curl -L https://sourceforge.net/projects/plantuml/files/plantuml.${PLANTUML_VERSION}.jar/download -o /app/plantuml.jar \
     && apk del curl
     
-RUN printf '#!/bin/bash\n\njava -jar /home/user/Downloads/plantuml.jar "$1" "$2"' > /usr/bin/plantuml \
+RUN printf '#!/bin/bash\n\njava -jar /app/plantuml.jar "$1" "$2"' > /usr/bin/plantuml \
     && chmod +x /usr/bin/plantuml
