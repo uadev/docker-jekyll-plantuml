@@ -1,5 +1,5 @@
 # vim:set ft=dockerfile:
-FROM ruby:2-alpine
+FROM ruby:2.4-alpine
 
 LABEL maintainer="Yuriy Voziy <yuretsz@gmail.com>"
     
