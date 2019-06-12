@@ -6,4 +6,5 @@ LABEL maintainer="Yuriy Voziy <yuretsz@gmail.com>"
 # Add PlantUML
 RUN apt-get update && apt-get install -y \
     plantuml \
- && rm -rf /var/lib/apt/lists/*
+    && rm -rf /var/lib/apt/lists/* \
+    && gem install jekyll-plantuml
